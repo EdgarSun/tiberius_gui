@@ -1,0 +1,6 @@
+{
+  "description": "Tiberius GUI",
+  "dependencies": {
+    "connect": "latest"
+  }
+}
