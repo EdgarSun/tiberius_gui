@@ -11,6 +11,12 @@
       $(function(){
         $("#header").load("nav.html"); 
       });
+
+      $.ajax({
+          url: "script.html",
+          success: function (data) { $('body').append(data); },
+          dataType: 'html'
+      });
     </script> 
   </head>
   <body class="bg-default">
@@ -28,38 +34,81 @@
               <h3 id="navbar" class="m-top-0">Camp</h3>
               <p class="m-bottom-0">Construct Base & Upgrade Mechs</p>
             </div>
+            <div id='slider' class='swipe'>
+              <div class='swipe-wrap'>
+                <div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150" >
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                </div><!-- /example -->
 
-            <div class="bs-example">
-              <div class="row">
-                <div class="col-xs-3 col-md-3">
-                  <a href="#" class="thumbnail">
-                    <img data-src="holder.js/150x150" >
-                  </a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                  <a href="#" class="thumbnail">
-                    <img data-src="holder.js/150x150">
-                  </a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                  <a href="#" class="thumbnail">
-                    <img data-src="holder.js/150x150">
-                  </a>
-                </div>
-                <div class="col-xs-3 col-md-3">
-                  <a href="#" class="thumbnail">
-                    <img data-src="holder.js/150x150">
-                  </a>
-                </div>
+                <div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150" >
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                </div><!-- /example -->
+
+                <div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150" >
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                  <div class="col-xs-3 col-md-3">
+                    <a href="#" class="thumbnail">
+                      <img data-src="holder.js/150x150">
+                    </a>
+                  </div>
+                </div><!-- /example -->
               </div>
-            </div><!-- /example -->
-
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
   </body>
 </html>

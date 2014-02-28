@@ -11,6 +11,12 @@
       $(function(){
         $("#header").load("nav.html"); 
       });
+
+      $.ajax({
+          url: "script.html",
+          success: function (data) { $('body').append(data); },
+          dataType: 'html'
+      });
     </script> 
   </head>
   <body class="bg-default">
@@ -82,10 +88,19 @@
             </ul>
           </div>
         </div>
+        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Next Award</h3>
+            </div>
+            <div class="panel-body p-all-0">
+              <a class="pull-left thumbnail m-bottom-0" href="#" >
+                <img class="media-object award-img" data-src="holder.js/110x82">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
   </body>
 </html>

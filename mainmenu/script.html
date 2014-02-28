@@ -1,0 +1,23 @@
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/swipe.js"></script>
+
+<script>
+
+  // pure JS
+  if( $('#slider').length )         // use this if you are using id to check
+  {
+    window.mySwipe = new Swipe(document.getElementById('slider'), {
+      startSlide: 0,
+      speed: 400,
+      auto: 0,
+      continuous: true,
+      disableScroll: false,
+      stopPropagation: false,
+      callback: function(index, elem) {},
+      transitionEnd: function(index, elem) {}
+    });
+  }
+
+
+</script>
