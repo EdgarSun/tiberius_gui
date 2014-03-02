@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootswatch: Slate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/slate/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script> 
+      // $(function(){
+      //   $("#header").load("nav.html"); 
+      // });
+
+      $.ajax({
+          url: "script.html",
+          success: function (data) { $('body').append(data); },
+          dataType: 'html'
+      });
+    </script> 
+  </head>
+  <body class="bg-default">
+    <div id="header" class="container">
+
+    </div>
+
+    <div class="container">
+      <div class="page-header" id="banner">
+        <div id="header-swipe" class="row">
+          <div class="col-sm-10 col-xs-12">
+            <div class="media">
+              <a class="pull-left thumbnail m-bottom-0 p-all-1" href="mech_fitting_room.html" >
+                <img class="media-object thumbnail-img" data-src="holder.js/120x120">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading" style="margin-bottom: 10px; margin-top: 7px;">Scout : Type - A Light</h4>
+                <div class="bs-example" style="margin-bottom: 10px;">
+                  <span class="label label-primary">Mobility : high</span>
+                  <span class="label label-warning">Armor : low</span>
+                  <span class="label label-danger">Damage : medium</span>
+                </div>
+                <p>
+                  Hit and run vehicle, able to get into battle fast and get out even faster.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-right-0">
+          <div class="bs-example">
+            <ul class="list-group">
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                Kills
+              </li>
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                Deaths
+              </li>
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                W/L Ratio
+              </li>
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                Highest Kill Streak
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p-right-0">
+          <div class="bs-example">
+            <ul class="list-group">
+              
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                Deaths
+              </li>
+              <li class="list-group-item p-list-group-item-sm">
+                <span class="badge">0</span>
+                W/L Ratio
+              </li>
+            </ul>
+          </div>
+        </div>
+<!--         <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+        </div> -->
+      </div>
+  </body>
+</html>

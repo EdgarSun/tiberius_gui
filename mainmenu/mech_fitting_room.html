@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootswatch: Slate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/slate/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script> 
+      // $(function(){
+      //   $("#header").load("nav.html"); 
+      // });
+
+      $.ajax({
+          url: "script.html",
+          success: function (data) { $('body').append(data); },
+          dataType: 'html'
+      });
+
+      $(document).ready(function() {
+          $("#slot-primary-weapon a").click(function() {
+              $('#slider-panel').animate({
+
+                      'opacity': 1
+                      }, 'fast', function() {
+                      // Animation complete.
+              });
+          });
+
+          $("#item-01 a").click(function() {
+              $('#slider-panel').animate({
+
+                      'opacity': 0
+                      }, 'fast', function() {
+                      // Animation complete.
+              });
+          });
+
+          $("#preview-panel").click(function() {
+              $('#slider-panel').animate({
+
+                      'opacity': 0
+                      }, 'fast', function() {
+                      // Animation complete.
+              });
+          });
+      });
+    </script> 
+  </head>
+  <body class="bg-default">
+    <div id="header" class="container">
+
+    </div>
+
+    <div class="container">
+      <div class="bs-docs-section clearfix">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="header-swipe" class="page-header">
+              <h3 id="navbar" class="m-top-0">Upgrade Mech</h3>
+              <p class="text-primary m-bottom-0">Scout : Type - A Light</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3 col-md-4 col-lg-4">
+
+            <div id="slot-primary-weapon" class="size-fixed-52 center-block pull-left">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>  
+
+            <div class="size-fixed-52 center-block pull-left">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>  
+
+            <div class="size-fixed-52 center-block pull-left">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>
+
+            <div class="size-fixed-52 center-block pull-left">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>
+
+          </div>
+          <div id="preview-panel" class="col-xs-6 col-md-4 col-lg-4">
+            <div class="size-preview-280 center-block">
+              <img class="thumbnail-img" src="/img/mech_ui/test_mech_01_s_low.webp" width="250" height="200" alt="...">
+            </div>
+          </div>
+          <div class="col-xs-3 col-md-4 col-lg-4">
+
+            <div class="size-fixed-52 center-block pull-right">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>  
+
+            <div class="size-fixed-52 center-block pull-right">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>  
+
+            <div class="size-fixed-52 center-block pull-right">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>
+
+            <div class="size-fixed-52 center-block pull-right">
+              <a href="#" class="thumbnail p-all-1">
+                <img class="thumbnail-img" data-src="holder.js/50x50" alt="...">
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="slider-panel" class="row" style="opacity:0;">
+          <div class="navbar-fixed-bottom">
+            <div id='slider' class='swipe' style="background-color: rgba(0,0,0,0.5);">
+              <div class='swipe-wrap'>
+                <div >
+                  <div id="item-01" class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+
+                </div> <!-- example -->
+                
+                <div >
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+
+                </div> <!-- example -->
+                
+                <div >
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-md-2">
+                    <div class="size-fixed-62 center-block">
+                      <a href="#" class="thumbnail p-all-1">
+                        <img class="thumbnail-img" data-src="holder.js/60x60" alt="...">
+                      </a>
+                    </div>
+                  </div>
+
+                </div> <!-- example -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

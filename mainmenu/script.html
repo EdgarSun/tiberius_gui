@@ -1,7 +1,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/holder.js"></script>
-<script src="js/swipe.js"></script>
-
+<script src="js/swipe.js"></script><!-- https://github.com/bradbirdsall/Swipe -->
+<script src="js/jquery.touchSwipe.min.js"></script><!-- https://github.com/mattbryson/TouchSwipe-Jquery-Plugin -->
 <script>
 
   // pure JS
@@ -12,10 +12,33 @@
       speed: 400,
       auto: 0,
       continuous: true,
-      disableScroll: false,
-      stopPropagation: false,
+      disableScroll: true,
+      stopPropagation: true,
       callback: function(index, elem) {},
       transitionEnd: function(index, elem) {}
+    });
+  }
+
+  if( $('#header-swipe').length )
+  {
+    $(function() {      
+      //Enable swiping...
+      $("#header-swipe").swipe( {
+        //Generic swipe handler for all directions
+        swipe:function(event, direction, distance, duration, fingerCount) {
+          console.log("You swiped " + direction );
+          if(direction == "right")
+          {
+            window.history.back();
+          }
+          else if(direction =="left")
+          {
+            window.history.forward();
+          }
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+         threshold:0
+      });
     });
   }
 
