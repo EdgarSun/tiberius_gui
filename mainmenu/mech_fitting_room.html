@@ -20,30 +20,15 @@
 
       $(document).ready(function() {
           $("#slot-primary-weapon a").click(function() {
-              $('#slider-panel').animate({
-
-                      'opacity': 1
-                      }, 'fast', function() {
-                      // Animation complete.
-              });
+            $("#slider-panel").transition({ y: '34px'}, 100, 'out', function() {})
           });
 
           $("#item-01 a").click(function() {
-              $('#slider-panel').animate({
-
-                      'opacity': 0
-                      }, 'fast', function() {
-                      // Animation complete.
-              });
+            $("#slider-panel").transition({ y: '100px'}, 100, 'out', function() {})
           });
 
           $("#preview-panel").click(function() {
-              $('#slider-panel').animate({
-
-                      'opacity': 0
-                      }, 'fast', function() {
-                      // Animation complete.
-              });
+            $("#slider-panel").transition({ y: '100px'}, 100, 'out', function() {});
           });
       });
     </script> 
@@ -94,7 +79,7 @@
           </div>
           <div id="preview-panel" class="col-xs-6 col-md-4 col-lg-4">
             <div class="size-preview-280 center-block">
-              <img class="thumbnail-img" src="img/mech_ui/test_mech_01_s.png" width="250" height="200" alt="...">
+              <img class="thumbnail-img" src="img/origin/xs/mech_ui/test_mech_01.png" width="250" height="200" alt="...">
             </div>
           </div>
           <div class="col-xs-3 col-md-4 col-lg-4">
@@ -126,7 +111,7 @@
           </div>
         </div>
 
-        <div id="slider-panel" class="row" style="opacity:0;">
+        <div id="slider-panel" class="row" >
           <div class="navbar-fixed-bottom">
             <div id='slider' class='swipe' style="background-color: rgba(0,0,0,0.5);">
               <div class='swipe-wrap'>

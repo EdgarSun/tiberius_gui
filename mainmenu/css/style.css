@@ -20,7 +20,7 @@
 }
 
 .bg-default{
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/origin/xs/background.jpg');
 }
 
 .badge {
@@ -94,6 +94,11 @@ height: 16px !important;
 .size-preview-280{
 	height: 200px;
 	width: 280px;
+}
+.size-fixed-152
+{
+	height: 152px;
+	width: 152px;
 }
 
 /**************swipe**************/
