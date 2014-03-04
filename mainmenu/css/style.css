@@ -21,6 +21,8 @@
 
 .bg-default{
 	background-image: url('../img/origin/xs/background.jpg');
+	background-attachment: fixed;
+	background-size:100% auto;
 }
 
 .badge {
