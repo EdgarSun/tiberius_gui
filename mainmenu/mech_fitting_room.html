@@ -18,6 +18,13 @@
           dataType: 'html'
       });
 
+      $.ajax({
+          url: "pre_script.html",
+          success: function (data) { $('body').prepend(data); },
+          dataType: 'html'
+      });
+
+
       $(document).ready(function() {
           $("#slot-primary-weapon a").click(function() {
             $("#slider-panel").transition({ bottom: '0px'}, 100, 'out', function() {})

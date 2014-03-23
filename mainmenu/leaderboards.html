@@ -17,6 +17,13 @@
           success: function (data) { $('body').append(data); },
           dataType: 'html'
       });
+
+      $.ajax({
+          url: "pre_script.html",
+          success: function (data) { $('body').prepend(data); },
+          dataType: 'html'
+      });
+      
     </script> 
   </head>
   <body class="bg-default">

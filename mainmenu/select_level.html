@@ -17,6 +17,13 @@
           success: function (data) { $('body').append(data); },
           dataType: 'html'
       });
+
+      $.ajax({
+          url: "pre_script.html",
+          success: function (data) { $('body').prepend(data); },
+          dataType: 'html'
+      });
+
     </script> 
   </head>
   <body class="bg-default">
@@ -54,7 +61,7 @@
                         <h3 class="panel-title panel-title center-block">Level 2</h3>
                       </div>
                       <div class="panel-body p-all-0">
-                        <a href="mech.html" class="thumbnail m-bottom-0">
+                        <a href="#" class="thumbnail m-bottom-0">
                           <img class="award-img" data-src="holder.js/100x100">
                         </a>
                       </div>

@@ -17,6 +17,13 @@
           success: function (data) { $('body').append(data); },
           dataType: 'html'
       });
+
+      $.ajax({
+          url: "pre_script.html",
+          success: function (data) { $('body').prepend(data); },
+          dataType: 'html'
+      });
+
     </script> 
   </head>
   <body class="bg-default">
@@ -30,25 +37,36 @@
           <div class="col-lg-12">
             <div id="header-swipe" class="page-header">
               <h4 id="navbar" class="m-top-0">Battle</h4>
-              <p class="text-primary m-bottom-0">switch game mode : single player & multiplayer</p>
+              <p class="text-primary m-bottom-0">Switch game mode</p>
             </div>
           </div>
 
           <div class="col-xs-6">
-            <div class="center-block size-fixed-152">
-              <a href="select_level.html" class="thumbnail p-all-1">
-                <img class="thumbnail-img" src="img/origin/xs/UI_GM_Single_Player.png" width="150" height="150" alt="Select Single Player Mode">
-              </a>
+            <div class="panel panel-success center-block" style="width:152px;">
+              <div class="panel-heading">
+                <h3 class="panel-title panel-title center-block">Single Player</h3>
+              </div>
+              <div class="panel-body p-all-0">
+                <a href="select_level.html" class="thumbnail m-bottom-0">
+                  <img class="award-img" src="img/origin/xs/UI_GM_Single_Player.png" width="150" height="150" alt="Select Single Player Mode">
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="col-xs-6">
-            <div class="center-block size-fixed-152">
-              <a href="main.html" class="thumbnail p-all-1">
-                <img class="thumbnail-img" src="img/origin/xs/UI_GM_MultiPlayer.png" width="150" height="150" alt="Select Multiplayer Mode">
-              </a>
+            <div class="panel panel-danger center-block" style="width:152px;">
+              <div class="panel-heading">
+                <h3 class="panel-title panel-title center-block">Multiplayer</h3>
+              </div>
+              <div class="panel-body p-all-0">
+                <a href="#" class="thumbnail m-bottom-0">
+                  <img class="award-img" src="img/origin/xs/UI_GM_MultiPlayer.png" width="150" height="150" alt="Select Single Player Mode">
+                </a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

@@ -17,6 +17,13 @@
           success: function (data) { $('body').append(data); },
           dataType: 'html'
       });
+
+      $.ajax({
+          url: "pre_script.html",
+          success: function (data) { $('body').prepend(data); },
+          dataType: 'html'
+      });
+
     </script> 
   </head>
   <body class="bg-default">
@@ -36,8 +43,8 @@
                 <h4 class="media-heading" style="margin-top: 5px; margin-bottom: 10px;">Edgar Sun</h4>
                 <div class="bs-example" style="margin-bottom: 10px;">
                   <span class="label label-primary" style="font-size: 10pt;">Level 12</span>
-                  <span class="label label-warning" style="font-size: 10pt;">660 RD</span>
                   <span class="label label-info" style="font-size: 10pt;">121 GP</span>
+                  <span class="label label-warning" style="font-size: 10pt;">660 Dart</span>
                 </div>
                 <div class="bs-example">
                   <div class="progress m-bottom-0">
