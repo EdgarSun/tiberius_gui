@@ -1,6 +1,6 @@
 var connect = require('connect'),
   directory = __dirname,
-  port = 3000;
+  port = 3001;
 
 connect()
   .use(connect.logger('dev'))
